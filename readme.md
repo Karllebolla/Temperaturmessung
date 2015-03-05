@@ -70,9 +70,9 @@ Den C-Code habe ich von folgender Seite erstanden.
 http://www.raspberrypi.org/forums/viewtopic.php?t=16968&p=177210
 ``` 
 
-Beim Compilieren muss darauf geachtet werden, das die smbus.c Datei dazu gelinkt wird.
+Beim Compilieren muss darauf geachtet werden, das die smbus.c Datei dazu gelinkt wird, oder einfach das Makefile benutzen.
 ```
-gcc -Wall -o temperaturmessung ./smbus.c ./temperaturmessung.c
+gcc -Wall -lm -o temperaturmessung ./smbus.c ./temperaturmessung.c
 ```
 
 Have fun!
